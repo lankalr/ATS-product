@@ -1,0 +1,99 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.horizon-text {
+    font-size: 100px;
+    vertical-align: middle;
+}
+
+.image-container{
+    flex: 1;
+    background-image: url('../../assets/side-image.jpg');
+    background-image: url('../../assets/simage2.jpg');
+    background-image: url('../../assets/simage3.jpg'); 
+    background-image: url('../../assets/simage4.jpg'); 
+    background-repeat: no-repeat;
+    width:80%;
+    height: 500px; 
+}
+
+.page-background {
+    width: 80%;
+    height: 500px;
+
+}
+
+.next {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: rgba(0,0,0,0.5);
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    font-size: 24px;
+    transition: background 0.3s;
+}
+
+.content-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.form-section {
+    flex: 1;
+    max-width: 200%;
+    padding: 50px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+.terms, .existing-account {
+    margin-top: 10px;
+}
