@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="logo-section">
+        <p>
+        <img src="assets/logo.png" class="logo"/>
+        <span class="horizon-text"> Horizon ATS</span></p>
+    </div>
+    <div class="content-section">
+        <div class="image-container">
+                <ng-image-slider #nav
+                [images]="imageObject"
+                [infinite]="false"
+                [autoSlide]="1"
+                [imageSize]="{width: '80%', height: 500}"
+                slideImage="4"></ng-image-slider>
+        </div>
+        <div class ="form-section">
+            <h2>Fill the details </h2>
+            <form (submit)="onSubmit()">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" [(ngModel)]="fullName" name="fullName" required/>
+                </div>
+                <div class="form-group">
+                    <label for="companyName">Company Name</label>
+                    <input type="text" id="companyName" [(ngModel)]="companyName" name="companyName" />
+                </div>
+                <div class="form-group">
+                    <label for="companyEmail">Company Email</label>
+                    <input type="email" id="companyEmail" [(ngModel)]="companyEmail" name="companyEmail" />
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" id="phoneNumber" [(ngModel)]="phoneNumber" name="phoneNumber" />
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <div class="terms">
+                By registering you accept the <a href="#">Terms and Conditions</a>
+            </div>
+            <div class="existing-account">
+                Already have an account? <a routerLink="/login">Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+
